@@ -1,6 +1,6 @@
 # Gestión de Empleados - Prueba Técnica PHP
 
-Aplicación web para la gestión de empleados (CRUD) desarrollada con PHP Orientado a Objetos, MySQL y Bootstrap. El proyecto cumple con los requisitos de una prueba técnica para un puesto de desarrollador de software, demostrando habilidades en desarrollo backend, manejo de bases de datos y construcción de interfaces funcionales.
+Aplicación web para la gestión de empleados (CRUD) desarrollada con PHP Orientado a Objetos, MySQL y Bootstrap. El proyecto cumple con los requisitos de una prueba técnica para un puesto de aprendiz como desarrollador de software, demostrando habilidades en desarrollo backend, manejo de bases de datos y construcción de interfaces funcionales.
 
 ## ✨ Características Principales
 
