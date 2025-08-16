@@ -31,18 +31,36 @@ Sigue estos pasos para poner en marcha el proyecto en tu máquina local.
 ### Pasos
 
 1.  **Clonar el Repositorio**
-    * Clona este proyecto en tu computadora o descarga el archivo ZIP.
+    * Clona este proyecto en tu computadora.
 
-2.  **Configurar la Base de Datos**
-    * Inicia los servicios de **Apache** y **MySQL** desde el panel de control de XAMPP.
-    * Abre tu navegador y ve a `http://localhost/phpmyadmin`.
-    * Crea una nueva base de datos con el nombre `prueba_tecnica`.
-    * Selecciona la base de datos creada, ve a la pestaña **"Importar"**, selecciona el archivo `script.sql` de este proyecto y ejecútalo.
+2.  **Configurar la Base de Datos (Tienes 2 opciones)**
+
+    * **Opción A (Recomendada): Dejar que el script lo haga todo.**
+        1.  Inicia Apache y MySQL en XAMPP.
+        2.  Abre `http://localhost/phpmyadmin`.
+        3.  En la página principal, ve a la pestaña **"Importar"**.
+        4.  Selecciona el archivo `script.sql` y ejecútalo. El script creará la base de datos y la tabla automáticamente.
+
+    * **Opción B: Si ya creaste la base de datos manualmente.**
+        1.  Inicia Apache y MySQL en XAMPP.
+        2.  Abre `http://localhost/phpmyadmin`.
+        3.  Haz clic en la base de datos `prueba_tecnica` que ya creaste en el panel izquierdo.
+        4.  Ve a la pestaña **"SQL"**.
+        5.  Copia y pega **solamente el siguiente código** (que es para crear la tabla) y ejecútalo:
+            ```sql
+            CREATE TABLE empleados (
+                idEmpleado INT PRIMARY KEY AUTO_INCREMENT,
+                nombreCompletoEmpleado VARCHAR(100) NOT NULL,
+                cargoEmpleado VARCHAR(50) NOT NULL,
+                correoElectronicoEmpleado VARCHAR(100) NOT NULL,
+                fechaIngresoEmpleado DATE NOT NULL
+            );
+            ```
 
 3.  **Configurar el Proyecto**
-    * Mueve la carpeta completa del proyecto al directorio `htdocs` de tu instalación de XAMPP (ej: `C:/xampp/htdocs/`).
-    * Asegúrate de que la carpeta se llame `pruebaTecnica` (o el nombre que prefieras).
+    * Mueve la carpeta del proyecto al directorio `htdocs` de tu instalación de XAMPP (ej: `C:/xampp/htdocs/pruebaTecnica`).
 
 4.  **Ejecutar la Aplicación**
+    * Abre tu navegador y navega a: `http://localhost/pruebaTecnica/`.
     * Abre tu navegador y navega a la siguiente URL: `http://localhost/pruebaTecnica/`.
     * ¡La aplicación debería estar funcionando!
